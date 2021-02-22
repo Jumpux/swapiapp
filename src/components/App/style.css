@@ -1,15 +1,13 @@
 .App {
-    /*background-image: url("../../images/app-background.png");*/
-    /*background-repeat: no-repeat;*/
     background-color: #000000;
     background-size: cover;
     color: #fff;
-    font-family: 'Starjedi', sans-serif;
+    font-family: 'Star Jedi', sans-serif;
     min-height: 100vh;
 }
 
 .search-button {
-    font-family: 'Starjedi', sans-serif;
+    font-family: 'Star Jedi', sans-serif;
     background-color: #FFDE06;
     color: #000;
     border-radius: 5px;
