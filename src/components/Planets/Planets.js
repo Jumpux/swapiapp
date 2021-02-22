@@ -51,8 +51,7 @@ function Planets({getData}) {
         if (Object.keys(allTypeData).length !== 0) {
             setSelectData((selectData) => [...selectData, ...allTypeData.results.map(it => it.name)])
             if (allTypeData.next !== null) {
-                console.log(allTypeData.next.replace('http', 'https'))
-                getData(allTypeData.next.replace('http', 'https')).then(({data}) => {
+                getData(allTypeData.next).then(({data}) => {
                     setAllTypeData(data)
                 })
             } else {
