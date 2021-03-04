@@ -65,8 +65,7 @@ function Planets({getData}) {
     const sendData = (e) => {
         setFilms([])
         e.preventDefault()
-        const sendDataUrl = `${url}${planetId}`
-        getData(sendDataUrl.replace('http:', 'https:g')).then(({data}) => {
+        getData(`${url}${planetId}`).then(({data}) => {
             setPlanetData(data)
             setError(false)
         }).catch((err) => {
@@ -77,7 +76,7 @@ function Planets({getData}) {
 
     // Получить фильмы планеты
     const getPlanetFilms = () => {
-        planet.films.map((it) => getData(it).then(({data}) => {
+        planet.films.map((it) => getData(it.replace('http:', 'https:')).then(({data}) => {
             setFilms((prev) => [...prev, data])
         }))
     }
