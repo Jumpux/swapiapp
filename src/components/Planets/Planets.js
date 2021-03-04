@@ -65,7 +65,8 @@ function Planets({getData}) {
     const sendData = (e) => {
         setFilms([])
         e.preventDefault()
-        getData(`${url}${planetId}`).then(({data}) => {
+        const sendDataUrl = `${url}${planetId}`
+        getData(sendDataUrl.replace('http:', 'https:g')).then(({data}) => {
             setPlanetData(data)
             setError(false)
         }).catch((err) => {

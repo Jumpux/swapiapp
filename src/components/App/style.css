@@ -2,12 +2,12 @@
     background-color: #000000;
     background-size: cover;
     color: #fff;
-    font-family: 'Star Jedi', sans-serif;
+    font-family: 'StarJedi', sans-serif;
     min-height: 100vh;
 }
 
 .search-button {
-    font-family: 'Star Jedi', sans-serif;
+    font-family: 'StarJedi', sans-serif;
     background-color: #FFDE06;
     color: #000;
     border-radius: 5px;
